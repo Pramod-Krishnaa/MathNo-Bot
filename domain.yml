@@ -1,0 +1,41 @@
+intents:
+- greet
+- operation
+- operands
+- more
+- greet_bye
+
+entities:
+- num1
+- num2
+- fun
+
+slots:
+  num1:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: num1
+  num2:
+    type: float
+    mappings:
+        - type: from_entity
+          entity: num2
+  fun:
+    type: text
+    mappings:
+        - type: from_entity
+          entity: fun
+actions:
+  - action_math_operation
+responses:
+  utter_functions:
+  - text: BOT- Hey dude I am a Mathno Bot. What mathematical operation I want to do for you ?
+  utter_numbers:
+  - text: BOT- What is the first operand and second operand by giving space between each value?
+  utter_more_operation:
+  - text: BOT- Sure we can do. What mathematical operation ?
+  utter_goodbye:
+  - text: BOT- Thank you for choosing me. See you again !
+
+
