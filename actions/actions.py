@@ -10,7 +10,7 @@ class ActionMathOperation(Action):
         # Extract the operands and operation from the entities
         num1 = float(tracker.get_slot("num1"))
         num2 = float(tracker.get_slot("num2"))
-        operation = str(tracker.get_slot("fun"))
+        operation = str(tracker.get_slot("ope"))
 
         # Perform the math operation based on the user input
         if operation == "addition" or operation == "add" or operation == "Addition" or operation ==  "Add":
