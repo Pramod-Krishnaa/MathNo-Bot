@@ -1,0 +1,29 @@
+stories:
+- story: user values
+  steps:
+  - intent: greet
+  - action: utter_functions
+  - intent: operation
+  - action: utter_numbers
+  - intent: operands
+    entities:
+    - num1
+    - num2
+  - action: action_math_operation
+  - intent: greet_bye
+  - action: utter_goodbye
+
+- story: repeat 
+  steps:
+  - intent: more
+  - action: utter_more_operation
+  - intent: operation
+  - action: utter_numbers
+  - intent: operands
+    entities:
+    - num1
+    - num2
+  - action: action_math_operation
+
+  - intent: greet_bye
+  - action: utter_goodbye

@@ -1,0 +1,52 @@
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: greet_bye
+  examples: |
+    - bye
+    - tata
+    - thank you
+    - thanks
+    - bye bye
+  
+- intent: operation
+  examples: |
+    - [Addition](ope)
+    - [Subtraction](ope)
+    - [Multiplication](ope)
+    - [Division](ope)
+    - [add](ope)
+    - [sub](ope)
+    - [mul](ope)
+    - [div](ope)
+    - [addition](ope)
+    - [subtraction](ope)
+    - [multiply](ope)
+    - [division](ope)
+- intent: operands
+  examples: |
+    - [8](num1) and [9](num2)
+    - [50](num1) [200](num2)
+    - [100](num1),[500](num2)
+    - [87868.654](num1)[2001](num2)
+    - [0](num1) [0](num2)
+
+- intent: more
+  examples: |
+    - more operations
+    - more operation
+    - once more
